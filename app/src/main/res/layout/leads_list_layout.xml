@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ImageView
+    android:id="@+id/lead_image"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_margin="20dp"
+    android:src="@drawable/clock_index"
+    />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oct 20,2016"
+        android:layout_toRightOf="@+id/lead_image"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:00PM"
+        android:layout_toRightOf="@+id/date"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        />
+
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_toRightOf="@+id/lead_image"
+        android:text="Name"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/lead_image"
+        android:text="name@gmail.com"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/interestin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gmail"
+        android:text="Interest in:"
+        android:layout_toRightOf="@+id/lead_image"
+        android:layout_marginLeft="5dp"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"/>
+    <ImageView
+        android:id="@+id/profileimage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/image_bottombar_profile"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/date"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statistics"
+            android:id="@+id/statistics"
+            android:textColor="#000"
+            android:layout_margin="10dp"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/dropdown"
+            android:src="@drawable/icon_arrow_down"
+            android:layout_alignParentRight="true"
+
+            />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/statistics"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#c4c4c4">
+        </View>
+        <TextView
+            android:id="@+id/dials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dials"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@+id/dialvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/view1"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:id="@+id/dialsview"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dials"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#c4c4c4">
+        </View>
+        <TextView
+            android:id="@+id/calls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calls"
+            android:layout_below="@+id/dialsview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@+id/callvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dialsview"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:id="@+id/callsview"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/calls"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#c4c4c4">
+        </View>
+        <TextView
+            android:id="@+id/appointments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Appointments"
+            android:layout_below="@+id/callsview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@+id/appointmentsvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/callsview"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:id="@+id/appoinmentsview"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/appointments"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#c4c4c4">
+        </View>
+        <TextView
+            android:id="@+id/leads"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leads"
+            android:layout_below="@+id/appoinmentsview"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"/>
+
+
+        <TextView
+            android:id="@+id/leadsvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 %"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/appoinmentsview"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"/>
+
+        <View
+            android:id="@+id/leadsview"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/leads"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#c4c4c4">
+        </View>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

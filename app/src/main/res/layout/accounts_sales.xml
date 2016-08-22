@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<TextView
+    android:id="@+id/sales"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sales"
+    android:textSize="15sp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="50dp"
+    android:textColor="#000"
+    />
+<TextView
+    android:id="@+id/accountgrowth"
+    android:layout_width="wrap_content"
+    android:layout_height="35dp"
+    android:layout_marginTop="40dp"
+    android:text="Account growth"
+    android:gravity="center"
+    android:layout_marginLeft="220dp"
+    android:background="@drawable/drawable_rectangle_box"
+    android:backgroundTint="#c4d3d3"
+
+    />
+<ImageView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginTop="50dp"
+    android:id="@+id/dropdown"
+    android:src="@drawable/icon_arrow_down"
+    android:layout_toRightOf="@+id/accountgrowth"
+
+    />
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/sales"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#c4c4c4">
+    </View>
+
+ <RelativeLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:id="@+id/saleslayout"
+     android:layout_below="@+id/view1"
+     android:layout_toRightOf="@+id/deallayout"
+     android:layout_marginLeft="50dp">
+
+<TextView
+    android:id="@+id/salesize"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sales"
+    android:layout_marginLeft="45dp"
+    android:layout_marginTop="25dp"
+    android:textColor="#000"
+    />
+    <TextView
+        android:id="@+id/salesizevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="15sp"
+        android:layout_below="@+id/salesize"
+        android:layout_marginLeft="65dp"
+        android:textColor="#000"
+        />
+    <View
+        android:id="@+id/view3"
+        android:layout_width="100dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/salesizevalue"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:background="#c4c4c4">
+    </View>
+    <TextView
+        android:id="@+id/valuemargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 %"
+        android:layout_below="@+id/view3"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Margin"
+        android:textSize="15sp"
+        android:layout_below="@+id/valuemargin"
+        android:layout_marginLeft="45dp"
+        android:textColor="#000"
+        />
+ </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deallayout"
+        android:layout_below="@+id/view1">
+
+        <TextView
+            android:id="@+id/dealsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deal size"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="25dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/dealsizevalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="15sp"
+            android:layout_below="@+id/dealsize"
+            android:layout_marginLeft="65dp"
+            android:textColor="#000"
+            />
+        <View
+            android:id="@+id/view2"
+            android:layout_width="100dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/dealsizevalue"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:background="#c4c4c4">
+        </View>
+        <TextView
+            android:id="@+id/days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 days"
+            android:layout_below="@+id/view2"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            />
+        <TextView
+            android:id="@+id/dealtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deal Time"
+            android:textSize="15sp"
+            android:layout_below="@+id/days"
+            android:layout_marginLeft="45dp"
+            android:textColor="#000"
+            />
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/profit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profit"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/deallayout"
+        android:layout_below="@+id/saleslayout"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+
+        />
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView
+        android:id="@+id/profileimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image_bottombar_profile"
+        android:layout_margin="10dp"
+        />
+<ImageView
+    android:id="@+id/mail_image"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_toRightOf="@+id/profileimage"
+    android:layout_marginTop="50dp"
+    android:src="@drawable/icon_document_mail"
+    />
+
+    <ImageView
+        android:id="@+id/callimage"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/profileimage"
+        android:layout_below="@+id/mail_image"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/icon_call"
+        />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_toRightOf="@+id/mail_image"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/emailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name@gmail.com"
+        android:layout_toRightOf="@+id/mail_image"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/phnmbr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+919876543210"
+        android:layout_toRightOf="@+id/callimage"
+        android:layout_below="@+id/emailid"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+<RelativeLayout
+    android:id="@+id/selectaccountlayout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#5a6f7e">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/selectaccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Select account"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+</RelativeLayout>
+<RelativeLayout
+    android:id="@+id/searchlayout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@+id/selectaccountlayout"
+    android:background="@drawable/drawable_rectangle_box"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:backgroundTint="#EAEBED"
+    >
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="120dp"
+        android:src="@drawable/search_icon"
+        />
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:text="Search"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#d4d4d4"
+        android:gravity="center"
+        />
+
+</RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/searchaccountlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        android:layout_below="@+id/searchlayout">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </ListView>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#5a6f7e"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/list"
+            android:text="Add new account"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+

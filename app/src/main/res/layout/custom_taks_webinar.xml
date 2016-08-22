@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/firstitemlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Jul 4,"
+            android:textColor="#e35249"
+            android:textSize="15sp" />
+
+
+        #f8bd6f
+        #e35249
+        #f7f7f7
+        #f6cb57
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/month"
+            android:text=" 2016,"
+            android:textColor="#e35249"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/year"
+            android:text=" 02:00 PM"
+            android:textColor="#e35249"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/month"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Workshop"
+            android:textColor="#f8bd6f"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/abcmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="abc gemvietnam"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/abcmail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Test Note For Testing"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/user"/>
+
+        <TextView
+            android:id="@+id/webinar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/time"
+            android:text="Webinar"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/seconditemlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/firstitemlayout">
+
+        <TextView
+            android:id="@+id/taskname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Workshop"
+            android:textColor="#f8bd6f"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/taskname2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="Google"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/google"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Test "
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/taskname2"
+            android:text="Email"
+            android:textColor="#000"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/user"/>
+    </RelativeLayout>
+    </RelativeLayout>

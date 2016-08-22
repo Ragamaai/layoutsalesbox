@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/accounts_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/"
+            android:layout_margin="10dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#ffc20a"/>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/accounts_image"
+            android:text="Name"
+            android:textColor="#000"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/profileimage"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/user" />
+
+        <ImageView
+
+            android:id="@+id/img_profile"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/name"
+            android:src="@drawable/account_icon_contact_in_progress" />
+
+        <TextView
+            android:id="@+id/imgprofilenmbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img_profile"
+            android:text="0"
+            android:textColor="#000" />
+
+        <ImageView
+
+            android:id="@+id/img_check"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img_profile"
+            android:src="@drawable/check_icon_bar_task" />
+
+        <TextView
+            android:id="@+id/checknmbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img_check"
+            android:text="0"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/img_calendar"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img_check"
+            android:src="@drawable/icon_meetings" />
+
+        <TextView
+            android:id="@+id/calnmbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img_calendar"
+            android:text="0"
+            android:textColor="#000" />
+
+        <ImageView
+            android:id="@+id/img_moneybag"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img_calendar"
+            android:src="@drawable/icon_budget" />
+
+        <TextView
+            android:id="@+id/moneynmbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/img_moneybag"
+            android:text="0"
+            android:textColor="#000" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/moneynmbr"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#c4c4c4">
+
+        </View>
+
+        <TextView
+            android:id="@+id/closedsales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Closed sales" />
+
+        <TextView
+            android:id="@+id/closedsalesnmbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/closedsales"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:textStyle="bold"
+            android:text="0"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/closedprofit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/closedsales"
+            android:text="Closed profit" />
+
+        <TextView
+            android:id="@+id/closedprofitnmbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/closedprofit"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/closedsalesnmbr"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/closedprofit"
+            android:text="Value" />
+
+        <TextView
+            android:id="@+id/valuenmbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/value"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/closedprofitnmbr"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/value"
+            android:text="Weighted" />
+
+        <TextView
+            android:id="@+id/weightnmbr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/value"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/valuenmbr"
+            android:text="0"
+            android:textStyle="bold"
+            android:textColor="#000" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

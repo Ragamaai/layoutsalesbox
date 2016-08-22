@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/profileimage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/icon_tab_contact"/>
+
+    <TextView
+        android:id="@+id/forecast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forecast"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/profileimage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        />
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overview"
+        android:layout_below="@+id/forecast"
+        android:layout_toRightOf="@+id/profileimage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        />
+    <TextView
+        android:id="@+id/testing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karthik Testing"
+        android:layout_below="@+id/overview"
+        android:layout_toRightOf="@+id/profileimage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        />
+    <ImageView
+        android:id="@+id/check"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/icon_check_done"
+        android:layout_below="@+id/forecast"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="15dp"
+        />
+</RelativeLayout>

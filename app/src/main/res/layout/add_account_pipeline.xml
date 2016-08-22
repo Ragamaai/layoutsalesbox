@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Pipeline"
+    android:id="@+id/pipeline"
+    android:textColor="#000"
+    android:layout_margin="10dp"
+    android:textSize="15sp"/>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/dropdown"
+        android:src="@drawable/icon_arrow_down"
+        android:layout_alignParentRight="true"
+
+        />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pipeline"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#c4c4c4">
+    </View>
+    <TextView
+        android:id="@+id/grosspipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gross pipe"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"/>
+
+
+    <TextView
+        android:id="@+id/grosspipevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/view1"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:id="@+id/grosspipeview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/grosspipe"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#c4c4c4">
+    </View>
+    <TextView
+        android:id="@+id/weightedpipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weighted pipe"
+        android:layout_below="@+id/grosspipeview"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"/>
+
+
+    <TextView
+        android:id="@+id/weightedpipevalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/grosspipeview"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:id="@+id/weightedpipeview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/weightedpipe"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#c4c4c4">
+    </View>
+    <TextView
+        android:id="@+id/pipeprofit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pipe Profit"
+        android:layout_below="@+id/weightedpipeview"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"/>
+
+
+    <TextView
+        android:id="@+id/pipeprofitvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/weightedpipeview"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:id="@+id/pipeprofitview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pipeprofit"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#c4c4c4">
+    </View>
+    <TextView
+        android:id="@+id/pipemargin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pipe Margin"
+        android:layout_below="@+id/pipeprofitview"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"/>
+
+
+    <TextView
+        android:id="@+id/pipemarginvalue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 %"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pipeprofitview"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"/>
+
+    <View
+        android:id="@+id/pipemarginview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pipemargin"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="#c4c4c4">
+    </View>
+
+</RelativeLayout>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <com.example.ramsraga.salesbox.utils.TextViewRegular
+            android:id="@+id/abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a@abc.com"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            />
+    <com.example.ramsraga.salesbox.utils.TextViewRegular
+        android:id="@+id/abc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a@abc.com"
+        android:textStyle="bold"
+        android:layout_below="@+id/abc"
+        android:textColor="#c3c3c3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        />
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/abc2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#c4c4c4">
+    </View>
+
+</RelativeLayout>

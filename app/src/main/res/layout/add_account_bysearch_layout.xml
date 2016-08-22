@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/addaccountlayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#5a6f7e">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:textColor="#fff"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/manually"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/addaccountlayout"
+            android:background="@drawable/drawable_rectangle_box"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="10sp"
+            android:layout_marginLeft="120dp"
+            android:text="Manual" />
+
+        <TextView
+            android:id="@+id/bysearch"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/addaccountlayout"
+            android:layout_toRightOf="@+id/manually"
+            android:background="@drawable/drawable_rectangle_box"
+            android:backgroundTint="#fff"
+            android:gravity="center"
+            android:textColor="#5a6f7e"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:text="By Search" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="Done"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/bysearch"
+            android:layout_marginLeft="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/searchlayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/addaccountlayout"
+        android:background="@drawable/drawable_rectangle_box"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#EAEBED"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="120dp"
+            android:src="@drawable/search_icon"
+            />
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="Search"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="#d4d4d4"
+            android:gravity="center"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/industry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Industry:"
+        android:layout_below="@+id/searchlayout"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchlayout"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp">
+    </Spinner>
+
+
+    <View
+        android:id="@+id/industryview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/industry"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="#c4c4c4">
+    </View>
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size:"
+        android:layout_below="@+id/industryview"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/industryview"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp">
+
+    </Spinner>
+
+
+    <View
+        android:id="@+id/sizeview"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/size"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:background="#c4c4c4">
+    </View>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:background="@drawable/drawable_rectangle_box"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#5a6f7e"
+        android:textColor="#fff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Search"
+        android:gravity="center"
+        />
+</RelativeLayout>
